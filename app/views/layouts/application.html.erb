@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AmberCloud</title>
+  <%= stylesheet_link_tag    'application', media: 'all' %>
+  <%= javascript_include_tag 'application' %>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <div class="container-fluid col-full-sized full-height">
+    <div class="col-md-2 col-full-sized sidebar">
+      <%= render "shared/navigation" %>
+    </div>
+    <div class="col-md-10 col-full-sized content">
+      <div class="col-md-12 col-full-sized notification">
+        <%= render "shared/notification" %>
+      </div>
+      <div class="col-md-12 full-height">
+        <%= yield %>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<div id="signin" class="central-focus">
+  <div class="item-middle">
+    <div class="col-md-3 col-xs-12 item-center">
+      <div class="col-md-10 col-xs-12 signin-logo item-center">
+        <div class="col-md-2 col-xs-3">
+          <span class="glyphicon glyphicon-cloud signin-logo-cloud" aria-hidden="true"></span>
+        </div>
+        <div class="col-md-10 col-xs-9"><h1>AmberCloud</h1></div>
+      </div>
+      <div class="col-md-12 col-xs-12">
+	       <div class="panel panel-default">
+	        <div class="panel-body">
+	          <%= form_for("user", url: signin_path) do |f| %>
+	            <div class="form-group">
+	              <div class="input-group">
+	                <span class="input-group-addon">
+	                  <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+	                </span>
+	                <%= f.text_field :name, class: 'form-control', placeholder: 'Name', autofocus: true   %>
+	              </div>
+	            </div>
+	            <div class="form-group">
+	              <div class="input-group">
+	                <span class="input-group-addon">
+	                  <span class="glyphicon glyphicon-lock" aria-hidden="true"></span>
+	                </span>
+	                <%= f.password_field :password, class: 'form-control', placeholder: 'Password', autocomplete: "off"  %>
+	              </div>
+	            </div>
+	            <div class="form-group">
+	              <span class="pull-right">
+                    <button type="submit" class="btn btn-info">SIGN IN</button>  
+	              </span>
+	            </div>
+	          <% end %>
+	        </div>
+	      </div>
+      </div>
+    </div>
+  </div>
+</div>

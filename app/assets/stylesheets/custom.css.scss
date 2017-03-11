@@ -1,0 +1,45 @@
+$theme-blue: #019fd7;
+$theme-blue-dark: #0286b5;
+$theme-blue-medium: #0392c5;
+
+html, body {
+  height: 100%;
+}
+
+.full-height {
+  height: 100%;
+}
+
+.central-focus {
+  display: table;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.item-middle {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.item-center {
+  float: none;
+  margin: 0 auto;
+}
+
+.pull-right {
+  float: right;
+}
+
+.col-full-sized {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+@media (min-width: 768px) {
+  
+}
+
+@media (max-width: 767px) {
+  
+}
