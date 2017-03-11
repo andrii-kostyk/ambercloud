@@ -10,17 +10,11 @@ gem 'bootstrap-sass', '~> 3.3.1'
 gem 'jquery-rails'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
-
-group :development, :test do
-  gem 'pry'
-end
+gem 'unicorn'
 
 group :development do
   gem 'web-console', '~> 2.0'
   gem 'spring'
-end
-
-group :production do
-  gem 'unicorn'
+  gem 'pry'
 end
 
