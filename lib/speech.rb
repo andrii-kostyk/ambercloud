@@ -14,6 +14,7 @@ module Speech
   	def audio_from_text
   		name = generete_name
   		system_send name
+      CleanTtsWorker.perform_in(1.minutes, name)
   		file_url name
   	end
 
@@ -41,5 +42,3 @@ module Speech
 
   end
 end
-
-#created = File.exists?(name)
