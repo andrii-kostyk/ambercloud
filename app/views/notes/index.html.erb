@@ -1,0 +1,25 @@
+<div id="notes" class="col-md-12 col-full-sized">
+  <div class="col-md-12 col-xs-12 client-page-head">
+    <div class="page-header">
+      <h1>Notes</h1>
+    </div>
+    <ul class="nav nav-pills">
+	  <li role="presentation" class="active"><a href="#">Notes list</a></li>
+	  <li role="presentation"><a href="#">Tags list</a></li>
+	  <li role="presentation" class="dropdown">
+	  	<a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+          More <span class="caret"></span>
+        </a>
+	    <ul class="dropdown-menu"> 
+	      <li><a href="#">Add new record</a></li> 
+	      <li><a href="#">Add new tag</a></li> 
+	      <li><a href="#">Filter by tag</a></li>
+	  </li>
+	</ul>
+  </div>
+  <div class="col-md-12 col-xs-12 client-page-body col-full-sized">
+    <%= render "note" %>
+    <%= render "note" %>
+    <%= render "note" %>
+  </div>
+</div>
